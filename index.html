@@ -1,15 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Slide Demo</title>
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">
-    <!--Add support for earlier versions of Internet Explorer -->
-    <!--[if lt IE 9]>
+<meta charset="utf-8">
+<title>Slide Demo</title>
+
+<meta name="description" content="A chef introduction for developers">
+<meta name="author" content="Haggai Philip Zagury">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent" />
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/reveal.min.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write('<link rel="stylesheet" href="css/print/'
+                + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
+                + '.css" type="text/css" media="print">');
+</script>
+
+<!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
+<![endif]-->
+
 </head>
+
 
 <body>
     <!-- Wrap the entire slide show in a div using the "reveal" class. -->
@@ -44,6 +65,13 @@
     <script>
         // Required, even if empty.
         Reveal.initialize({
+            controls : true,
+            progress : true,
+            keyboard : true,
+            transition: 'default', // none/fade/slide/convex/concave/zoom
+            transitionSpeed: 'default', // default/fast/slow
+            backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
         });
     </script>
 </body>
